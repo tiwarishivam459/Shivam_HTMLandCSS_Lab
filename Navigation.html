@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            background-color: red;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 50px;
+        }
+
+        nav {
+            background-color: darkgray;
+
+        }
+
+        ol {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-left: 50px;
+        }
+
+        ol li {
+            color: white;
+            padding: 10px;
+            list-style-type: none;
+        }
+
+        li:hover {
+            background-color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Demo of Dropdown</h1>
+    <nav>
+        <ol>
+            <li>Link 1</li>
+            <div class="dropdown">
+                <li>Link 2</li>
+                <div class="dropdown-content">
+                    <a href="#">DD_Link_1</a>
+                    <a href="#">DD_Link_2</a>
+                    <a href="#">DD_Link_3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>Link 3</li>
+                <div class="dropdown-content">
+                    <a href="#">DD_Link_1</a>
+                    <a href="#">DD_Link_2</a>
+                    <a href="#">DD_Link_3</a>
+                </div>
+            </div>
+        </ol>
+    </nav>
+</body>
+
+</html>
